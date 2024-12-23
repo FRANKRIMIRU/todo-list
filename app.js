@@ -18,6 +18,16 @@ function addTask(){
       inputBox.value  = '';
       saveData()
 }
+
+inputBox.addEventListener("keydown",(e)=>{
+    if (e.key === "Enter"){addTask();
+
+    }
+        
+}
+
+)
+
 // this is my code on how to delete...this was before the span
 // function deleteTask(){
 //      if(listContainer)
@@ -28,7 +38,7 @@ function addTask(){
 //         listContainer.removeChild(li);
 // 
 //adding the event listener e is event object 
-listContainer.addEventListener("click",function(e){
+listContainer.addEventListener("click",(e) => {
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
         saveData()
