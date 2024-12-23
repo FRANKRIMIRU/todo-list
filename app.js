@@ -27,7 +27,7 @@ function addTask(){
 //     li.innerHTML = inputBox.value;
 //         listContainer.removeChild(li);
 // 
-
+//adding the event listener e is event object 
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
