@@ -21,22 +21,9 @@ function addTask(){
 
 inputBox.addEventListener("keydown",(e)=>{
     if (e.key === "Enter"){addTask();
-
-    }
-        
+    }    
 }
-
 )
-
-// this is my code on how to delete...this was before the span
-// function deleteTask(){
-//      if(listContainer)
-
-
-//     let li = document.deleteElement("li");
-//     li.innerHTML = inputBox.value;
-//         listContainer.removeChild(li);
-// 
 //adding the event listener e is event object 
 listContainer.addEventListener("click",(e) => {
     if(e.target.tagName === "LI"){
